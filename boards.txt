@@ -1,0 +1,127 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+# 
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.softdevice=SoftDevice
+menu.debug=Debug
+
+
+# ----------------------------------
+# Arduino WIO NODE
+# ----------------------------------
+wionode.name=Arduino Wio Node
+
+# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
+wionode.vid.0=0x239A
+wionode.pid.0=0x8061
+wionode.vid.1=0x239A
+wionode.pid.1=0x0061
+wionode.vid.2=0x239A
+wionode.pid.2=0x0062
+wionode.vid.3=0x239A
+wionode.pid.3=0x802A
+
+# Upload
+wionode.bootloader.tool=bootburn
+wionode.upload.tool=nrfutil
+wionode.upload.protocol=nrfutil
+wionode.upload.use_1200bps_touch=true
+wionode.upload.wait_for_upload_port=true
+wionode.upload.maximum_size=815104
+wionode.upload.maximum_data_size=237568
+
+# Build
+wionode.build.mcu=cortex-m4
+wionode.build.f_cpu=64000000
+wionode.build.board=NRF52840_WIO_NODE
+wionode.build.core=nRF5
+wionode.build.variant=wio_node
+wionode.build.usb_manufacturer="Arduino LLC"
+wionode.build.usb_product="Wio Node"
+wionode.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+wionode.build.ldscript=nrf52840_s140_v6.ld
+wionode.build.vid=0x239A
+wionode.build.pid=0x8061
+
+# SofDevice Menu
+wionode.menu.softdevice.s140v6=S140 6.1.1
+wionode.menu.softdevice.s140v6.build.sd_name=s140
+wionode.menu.softdevice.s140v6.build.sd_version=6.1.1
+wionode.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+wionode.menu.debug.l0=Level 0 (Release)
+wionode.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+wionode.menu.debug.l1=Level 1 (Error Message)
+wionode.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+wionode.menu.debug.l2=Level 2 (Full Debug)
+wionode.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+wionode.menu.debug.l3=Level 3 (Segger SystemView)
+wionode.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+wionode.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
+# Arduino XIAO BLE
+# ----------------------------------
+xiaoble.name=Arduino Xiao Ble
+
+# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
+xiaoble.vid.0=0x239A
+xiaoble.pid.0=0x8059
+xiaoble.vid.1=0x239A
+xiaoble.pid.1=0x0059
+xiaoble.vid.2=0x239A
+xiaoble.pid.2=0x0060
+xiaoble.vid.3=0x239A
+xiaoble.pid.3=0x802A
+
+# Upload
+xiaoble.bootloader.tool=bootburn
+xiaoble.upload.tool=nrfutil
+xiaoble.upload.protocol=nrfutil
+xiaoble.upload.use_1200bps_touch=true
+xiaoble.upload.wait_for_upload_port=true
+xiaoble.upload.maximum_size=815104
+xiaoble.upload.maximum_data_size=237568
+
+# Build
+xiaoble.build.mcu=cortex-m4
+xiaoble.build.f_cpu=64000000
+xiaoble.build.board=NRF52840_XIAO_BLE
+xiaoble.build.core=nRF5
+xiaoble.build.variant=xiao_ble
+xiaoble.build.usb_manufacturer="Arduino LLC"
+xiaoble.build.usb_product="Xiao Ble"
+xiaoble.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+xiaoble.build.ldscript=nrf52840_s140_v6.ld
+xiaoble.build.vid=0x239A
+xiaoble.build.pid=0x8059
+
+# SofDevice Menu
+xiaoble.menu.softdevice.s140v6=S140 6.1.1
+xiaoble.menu.softdevice.s140v6.build.sd_name=s140
+xiaoble.menu.softdevice.s140v6.build.sd_version=6.1.1
+xiaoble.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+xiaoble.menu.debug.l0=Level 0 (Release)
+xiaoble.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+xiaoble.menu.debug.l1=Level 1 (Error Message)
+xiaoble.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+xiaoble.menu.debug.l2=Level 2 (Full Debug)
+xiaoble.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+xiaoble.menu.debug.l3=Level 3 (Segger SystemView)
+xiaoble.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+xiaoble.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1

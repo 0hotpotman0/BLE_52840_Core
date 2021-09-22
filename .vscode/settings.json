@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "tusb_config_nrf.h": "c",
+        "adacallback.h": "c",
+        "tusb_option.h": "c",
+        "usbd.h": "c",
+        "usbd_pvt.h": "c",
+        "tusb.h": "c",
+        "nrf.h": "c",
+        "nrfx_config.h": "c",
+        "tinyusb.h": "c"
+    }
+}
