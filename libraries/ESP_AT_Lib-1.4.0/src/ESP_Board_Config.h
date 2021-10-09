@@ -86,6 +86,8 @@
     #define BOARD_TYPE      "RAYTAC_MDBT50Q_RX"
   #elif defined(ARDUINO_NRF52_ADAFRUIT)
     #define BOARD_TYPE      "ARDUINO_NRF52_ADAFRUIT"
+  #elif defined(Seeed_Smart_Node_Generic_Edition)
+    #define BOARD_TYPE      "Seeed_Smart_Node_Generic_Edition"
   #else
     #define BOARD_TYPE      "nRF52 Unknown"
   #endif
