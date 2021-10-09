@@ -34,10 +34,10 @@ extern "C"{
 #define INPUT_PULLDOWN_SENSE  (0x5)
 #define INPUT_SENSE_HIGH      (0x6)
 #define INPUT_SENSE_LOW       (0x7)
-#define OUTPUT_S0S1           OUTPUT
+#define OUTPUT_S0S1           (0xA)
 #define OUTPUT_H0S1           (0x8)
 #define OUTPUT_S0H1           (0x9)
-#define OUTPUT_H0H1           (0xA)
+#define OUTPUT_H0H1           (OUTPUT)
 #define OUTPUT_D0S1           (0xB)
 #define OUTPUT_D0H1           (0xC)
 #define OUTPUT_S0D1           (0xD)
