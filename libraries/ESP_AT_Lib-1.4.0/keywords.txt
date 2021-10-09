@@ -1,0 +1,84 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ESP8266	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getUart KEYWORD2
+changeUart KEYWORD2
+setOnData KEYWORD2
+run KEYWORD2
+kick KEYWORD2
+restart KEYWORD2
+getVersion	KEYWORD2
+deepSleep KEYWORD2
+setEcho KEYWORD2
+restore KEYWORD2
+setUart	KEYWORD2
+setOprToStation	KEYWORD2
+getWifiModeList  KEYWORD2
+setOprToSoftAP KEYWORD2
+setOprToStationSoftAP	KEYWORD2
+getOprMode KEYWORD2
+getAPList	KEYWORD2
+getNowConecAp KEYWORD2
+joinAP	KEYWORD2
+leaveAP KEYWORD2
+setSoftAPParam KEYWORD2
+getJoinedDeviceIP KEYWORD2
+getDHCP  KEYWORD2
+setDHCP KEYWORD2
+setAutoConnect  KEYWORD2
+getStationMac	KEYWORD2
+setStationMac	KEYWORD2
+getStationIp KEYWORD2
+setStationIp  KEYWORD2
+getAPIp KEYWORD2
+setAPIp KEYWORD2
+startSmartConfig KEYWORD2
+stopSmartConfig	KEYWORD2
+getIPStatus KEYWORD2
+getLocalIP  KEYWORD2
+enableMUX KEYWORD2
+disableMUX KEYWORD2
+createTCP KEYWORD2
+releaseTCP	KEYWORD2
+registerUDP KEYWORD2
+unregisterUDP  KEYWORD2
+createTCP KEYWORD2
+releaseTCP KEYWORD2
+registerUDP KEYWORD2
+unregisterUDP	KEYWORD2
+setTCPServerTimeout KEYWORD2
+startTCPServer  KEYWORD2
+stopTCPServer KEYWORD2
+setCIPMODE KEYWORD2
+startServer KEYWORD2
+stopServer  KEYWORD2
+saveTransLink KEYWORD2
+setPing KEYWORD2
+recv	KEYWORD2
+recvPkg KEYWORD2
+send KEYWORD2
+sendFromFlash	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#	LITERAL1
+
+AT_LIB_DEBUG_OUTPUT LITERAL1
+ESP_AT_LIB_DEBUG_OUTPUT  LITERAL1
+ESP_AT_LIB_DEBUG LITERAL1
+WFM_NO_LABEL  LITERAL1
+USE_ESP32_AT  LITERAL1
+DEFAULT_PATTERN LITERAL1
+SERIAL_TX_BUFFER_SIZE  LITERAL1
+SERIAL_TX_BUFFER_SIZE LITERAL1
+_ESP_AT_LIB_LOGLEVEL_ LITERAL1
+
