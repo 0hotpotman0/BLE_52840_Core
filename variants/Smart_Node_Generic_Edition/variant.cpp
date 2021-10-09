@@ -29,16 +29,17 @@ const uint32_t g_ADigitalPinMap[] =
 
    4,  // D0  is P0.04 (AD_ID1)
    5,  // D1  is P0.05 (AD_ID2)
-	  
-  30,  // D2  is P0.30 (A6)
-  31,  // D3  is P0.31 (A7) 
+
+  14,  // D2  is P0.14 (HALL_ENABLE)
+  15,  // D3  is P0.15 (HALL_INT)	  
 
    7,  // D4  is P0.07 (KEY1)
    8,  // D5  is P0.08 (KEY2)
-  40,  // D6  is P1.08 (KEY3)
+ 
+  30,  // D6  is P0.30 (A6)
+  31,  // D7  is P0.31 (A7) 
   
-  14,  // D7  is P0.14 (HALL_ENABLE)
-  15,  // D8  is P0.15 (HALL_INT)
+  40,  // D8  is P1.08 (KEY3)
 
 
   12,  // D9  is P0.12 (SD_CS)

@@ -68,6 +68,12 @@ extern "C"
 #define PIN_KEY2             (5)
 
 /*
+ * HALL
+ */
+#define PIN_HALL_POWER       (2)
+#define PIN_HALL_READ        (3)
+
+/*
  * Analog pins
  */
 #define PIN_A0               (0)
@@ -76,8 +82,8 @@ extern "C"
 //#define PIN_A3               (17)
 //#define PIN_A4               (18)
 //#define PIN_A5               (19)
-#define PIN_A6               (2)
-#define PIN_A7               (3)
+#define PIN_A6               (6)
+#define PIN_A7               (7)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
@@ -117,6 +123,8 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+#define PIN_SD_POWER         (14)
+#define PIN_SD_CS            (9)
 /*
  * Wire Interfaces
  */
