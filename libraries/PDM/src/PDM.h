@@ -20,7 +20,7 @@
 #define _PDM_H_INCLUDED
 
 #if !defined(ARDUINO_NRF52)
-#error "This library targets only Adafruit NRF52840 boards"
+#error "This library targets only NRF52840 boards"
 #endif
 
 #include <Arduino.h>
