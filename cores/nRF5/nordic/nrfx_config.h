@@ -8,6 +8,9 @@
 
 #define NRFX_CLOCK_CONFIG_LF_SRC 1
 
+#define NRFX_NFCT_ENABLED             1
+#define NRFX_NFCT_CONFIG_IRQ_PRIORITY 6
+
 #define NRFX_SPIM_ENABLED            1
 #define NRFX_SPIM_MISO_PULL_CFG      1 // pulldown
 #define NRFX_SPIM_EXTENDED_ENABLED   0
