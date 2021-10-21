@@ -288,25 +288,25 @@ NRFX_STATIC_INLINE nrf_clock_hfclk_div_t nrfx_clock_divider_get(nrf_clock_domain
 }
 #endif // NRF_CLOCK_HAS_HFCLK_DIV || NRF_CLOCK_HAS_HFCLK_192M
 
-NRFX_STATIC_INLINE void nrfx_clock_lfclk_start(void)
-{
-    nrfx_clock_start(NRF_CLOCK_DOMAIN_LFCLK);
-}
+// NRFX_STATIC_INLINE void nrfx_clock_lfclk_start(void)
+// {
+//     nrfx_clock_start(NRF_CLOCK_DOMAIN_LFCLK);
+// }
 
-NRFX_STATIC_INLINE void nrfx_clock_lfclk_stop(void)
-{
-    nrfx_clock_stop(NRF_CLOCK_DOMAIN_LFCLK);
-}
+// NRFX_STATIC_INLINE void nrfx_clock_lfclk_stop(void)
+// {
+//     nrfx_clock_stop(NRF_CLOCK_DOMAIN_LFCLK);
+// }
 
-NRFX_STATIC_INLINE void nrfx_clock_hfclk_start(void)
-{
-    nrfx_clock_start(NRF_CLOCK_DOMAIN_HFCLK);
-}
+// NRFX_STATIC_INLINE void nrfx_clock_hfclk_start(void)
+// {
+//     nrfx_clock_start(NRF_CLOCK_DOMAIN_HFCLK);
+// }
 
-NRFX_STATIC_INLINE void nrfx_clock_hfclk_stop(void)
-{
-    nrfx_clock_stop(NRF_CLOCK_DOMAIN_HFCLK);
-}
+// NRFX_STATIC_INLINE void nrfx_clock_hfclk_stop(void)
+// {
+//     nrfx_clock_stop(NRF_CLOCK_DOMAIN_HFCLK);
+// }
 
 NRFX_STATIC_INLINE uint32_t nrfx_clock_ppi_task_addr(nrf_clock_task_t task)
 {
