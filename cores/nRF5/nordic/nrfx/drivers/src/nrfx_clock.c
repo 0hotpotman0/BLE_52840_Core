@@ -39,7 +39,7 @@
  */
 
 #include <nrfx.h>
-//#if NRFX_CHECK(NRFX_CLOCK_ENABLED)
+#if NRFX_CHECK(NRFX_CLOCK_ENABLED)
 
 #include "nrfx_clock.h"
 
@@ -400,4 +400,4 @@ void nrfx_clock_irq_handler(void)
 #endif //  NRFX_CHECK(NRFX_CLOCK_CONFIG_LF_CAL_ENABLED)
 }
 
-//#endif // NRFX_CHECK(NRFX_CLOCK_ENABLED)
+#endif // NRFX_CHECK(NRFX_CLOCK_ENABLED)
