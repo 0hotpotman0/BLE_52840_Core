@@ -128,7 +128,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 
 #define PIN_WIRE1_SDA        (17)
 #define PIN_WIRE1_SCL        (16)
-
+#define PIN_LSM6DS3TR_C_POWER (15)
+#define PIN_LSM6DS3TR_C_INT1 (18)
 
 // PDM Interfaces
 // ---------------
