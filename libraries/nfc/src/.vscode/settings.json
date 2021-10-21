@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "nfc_ble_pair_common.h": "c",
-        "nfc_ndef_record.h": "c",
-        "nfc_ndef_msg.h": "c",
-        "nfc_tlv_block.h": "c"
-    }
-}
