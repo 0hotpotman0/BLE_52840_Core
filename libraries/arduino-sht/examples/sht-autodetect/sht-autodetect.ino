@@ -4,13 +4,14 @@
 
 SHTSensor sht;
 // To use a specific sensor instead of probing the bus use this command:
-// SHTSensor sht(SHTSensor::SHT3X);
+// SHTSensor sht(SHTSensor::SHT4X);
 
 void setup() {
   // put your setup code here, to run once:
 
   Wire.begin();
   Serial.begin(9600);
+  while(!Serial);
   delay(1000); // let serial console settle
 
   if (sht.init()) {
@@ -18,7 +19,6 @@ void setup() {
   } else {
       Serial.print("init(): failed\n");
   }
-  sht.setAccuracy(SHTSensor::SHT_ACCURACY_MEDIUM); // only supported by SHT3x
 
 }
 
