@@ -263,6 +263,10 @@ bool Adafruit_SPIFlashBase::begin(SPIFlash_Device_t const *flash_devs,
   return true;
 }
 
+void Adafruit_SPIFlashBase::end(){
+  _trans->end();
+}
+
 #endif // ARDUINO_ARCH_ESP32
 
 void Adafruit_SPIFlashBase::setIndicator(int pin, bool state_on) {
@@ -319,6 +323,10 @@ bool Adafruit_SPIFlashBase::writeEnable(void) {
 
 bool Adafruit_SPIFlashBase::writeDisable(void) {
   return _trans->runCommand(SFLASH_CMD_WRITE_DISABLE);
+}
+
+bool Adafruit_SPIFlashBase::deepPowerDown(void) {
+  return _trans->runCommand(0xB9);
 }
 
 bool Adafruit_SPIFlashBase::eraseSector(uint32_t sectorNumber) {

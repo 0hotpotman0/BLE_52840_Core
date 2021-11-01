@@ -39,7 +39,7 @@ public:
   ~Adafruit_SPIFlashBase() {}
 
   bool begin(SPIFlash_Device_t const *flash_devs = NULL, size_t count = 1);
-  bool end(void);
+  void end(void);
 
   void setIndicator(int pin, bool state_on = true);
 
@@ -53,7 +53,8 @@ public:
   void waitUntilReady(void);
   bool writeEnable(void);
   bool writeDisable(void);
-
+  bool deepPowerDown(void);
+  
   uint32_t getJEDECID(void);
 
   uint32_t readBuffer(uint32_t address, uint8_t *buffer, uint32_t len);
