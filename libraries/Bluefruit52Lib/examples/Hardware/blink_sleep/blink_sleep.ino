@@ -26,7 +26,7 @@ void gotoSleep(unsigned long time)
   if ((time>SLEEPING_DELAY))
   {
     // to reduce power consumption when sleeping, turn off all your LEDs (and other power hungry devices)
-    digitalWrite(LED_BUILTIN, LOW);                     
+    digitalWrite(LED_BUILTIN, HIGH);                     
 
     // setup your wake-up pins.
     pinMode(WAKE_LOW_PIN,  INPUT_PULLUP_SENSE);    // this pin (WAKE_LOW_PIN) is pulled up and wakes up the feather when externally connected to ground.
