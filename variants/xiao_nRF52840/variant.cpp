@@ -75,6 +75,7 @@ const uint32_t g_ADigitalPinMap[] =
 
 void initVariant()
 {
-
+	pinMode(PIN_QSPI_CS, OUTPUT);
+	digitalWrite(PIN_QSPI_CS, HIGH);
 }
 
