@@ -34,7 +34,7 @@ void delay( uint32_t ms )
 {
   uint32_t ticks = ms2tick(ms);
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
   // Take chance to flush usb cdc
   uint32_t flush_tick = xTaskGetTickCount();
   TinyUSB_Device_FlushCDC();

@@ -26,7 +26,7 @@
 #define _TINYUSB_H_
 
 // Error message for Core that must select TinyUSB via menu
-#if !defined(USE_TINYUSB) && ( defined(ARDUINO_ARCH_SAMD) || \
+#if !defined(TINYUSB_ENABLED) && ( defined(ARDUINO_ARCH_SAMD) || \
                                (defined(ARDUINO_ARCH_RP2040) && !defined(ARDUINO_ARCH_MBED)) || \
                                defined(ARDUINO_ARCH_ESP32) )
 #error TinyUSB is not selected, please select it in "Tools->Menu->USB Stack"

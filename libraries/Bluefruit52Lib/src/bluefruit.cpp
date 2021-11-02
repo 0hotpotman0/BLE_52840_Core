@@ -55,7 +55,7 @@
   #define CFG_DEFAULT_NAME    "Feather nRF52832"
 #endif
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
 #include "nrfx_power.h"
 
 /* tinyusb function that handles power event (detected, ready, removed)
@@ -285,7 +285,7 @@ bool AdafruitBluefruit::begin(uint8_t prph_count, uint8_t central_count)
   _prph_count    = prph_count;
   _central_count = central_count;
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
   usb_softdevice_pre_enable();
 #endif
 
@@ -319,7 +319,7 @@ bool AdafruitBluefruit::begin(uint8_t prph_count, uint8_t central_count)
   VERIFY_STATUS( sd_softdevice_enable(&clock_cfg, nrf_error_cb), false );
 #endif
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
   usb_softdevice_post_enable();
 #endif
 
@@ -696,7 +696,7 @@ void adafruit_soc_task(void* arg)
               if ( flash_nrf5x_event_cb ) flash_nrf5x_event_cb(soc_evt);
             break;
 
-            #ifdef USE_TINYUSB
+            #ifdef TINYUSB_ENABLED
             /*------------- usb power event handler -------------*/
             case NRF_EVT_POWER_USB_DETECTED:
             case NRF_EVT_POWER_USB_POWER_READY:

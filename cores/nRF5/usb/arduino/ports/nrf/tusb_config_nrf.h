@@ -35,7 +35,7 @@ extern void usb_device_task(void *param);
 //--------------------------------------------------------------------
 #define CFG_TUSB_MCU OPT_MCU_NRF5X
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
 #define CFG_TUSB_RHPORT0_MODE OPT_MODE_DEVICE
 #else
 #define CFG_TUSB_RHPORT0_MODE OPT_MODE_NONE

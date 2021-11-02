@@ -16,7 +16,7 @@
 #define ARDUINO_MAIN
 #include "Arduino.h"
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
 #include "../usb/TinyUSB.h"
 #endif
 
@@ -52,7 +52,7 @@ static void loop_task(void* arg)
 {
   (void) arg;
 
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
   TinyUSB_Device_Init(0);
 #endif
 

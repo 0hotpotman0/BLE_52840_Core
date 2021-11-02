@@ -83,7 +83,7 @@ private:
 };
 
 // "Serial" is used with TinyUSB CDC
-#if defined(USE_TINYUSB) &&                                                    \
+#if defined(TINYUSB_ENABLED) &&                                                    \
     !(defined(ARDUINO_ARCH_ESP32) && ARDUINO_SERIAL_PORT == 0)
 extern USBD_CDC Serial;
 #define SerialTinyUSB Serial

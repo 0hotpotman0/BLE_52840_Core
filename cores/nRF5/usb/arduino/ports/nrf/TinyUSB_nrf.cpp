@@ -135,4 +135,4 @@ static void usb_hardware_init(void) {
   }
 }
 
-#endif // USE_TINYUSB
+#endif // TINYUSB_ENABLED

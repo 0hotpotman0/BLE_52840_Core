@@ -111,7 +111,7 @@ extern USBD_Device TinyUSBDevice;
 
 // USBDevice has a high chance to conflict with other usb stack
 // only define if supported BSP
-#ifdef USE_TINYUSB
+#ifdef TINYUSB_ENABLED
 #define USBDevice TinyUSBDevice
 #endif
 
