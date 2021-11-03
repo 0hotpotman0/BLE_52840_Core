@@ -64,6 +64,19 @@ extern "C"
  */
 #define PIN_BUTTON1          (PINS_COUNT)//(7)
 
+//Digital PINs
+#define D0 (0ul)
+#define D1 (1ul)
+#define D2 (2ul)
+#define D3 (3ul)
+#define D4 (4ul)
+#define D5 (5ul)
+#define D6 (6ul)
+#define D7 (7ul)
+#define D8 (8ul)
+#define D9 (9ul)
+#define D10 (10ul)
+
 /*
  * Analog pins
  */
