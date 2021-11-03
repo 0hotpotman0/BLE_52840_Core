@@ -126,6 +126,9 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PIN_WIRE_SDA         (4)
 #define PIN_WIRE_SCL         (5)
 
+static const uint8_t SDA = PIN_WIRE_SDA;
+static const uint8_t SCL = PIN_WIRE_SCL;
+
 #define PIN_WIRE1_SDA        (17)
 #define PIN_WIRE1_SCL        (16)
 #define PIN_LSM6DS3TR_C_POWER (15)
