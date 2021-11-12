@@ -42,7 +42,7 @@ void setup() {
   // - a 32 kHz or 64 kHz sample rate for the Arduino Portenta Vision Shield
   if (!PDM.begin(channels, frequency)) {
     Serial.println("Failed to start PDM!");
-    while (1);
+    while (1)yield();
   }
 }
 
