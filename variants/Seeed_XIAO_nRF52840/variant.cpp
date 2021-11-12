@@ -42,7 +42,7 @@ const uint32_t g_ADigitalPinMap[] =
   26,  // D11 is P0.26 (LED RED)
    6,  // D12 is P0.06 (LED BLUE) 
   30,  // D13 is P0.30 (LED GREEN) 
-  14,  // D14 is P0.14 (LED RGB) does not exist
+  14,  // D14 is P0.14 (READ_BAT)
 
   // LSM6DS3TR
   40,  // D15 is P1.08 (6D_PWR)
@@ -71,6 +71,8 @@ const uint32_t g_ADigitalPinMap[] =
    9,  // D30 is P0.09 (NFC1)
   10,  // D31 is P0.10 (NFC2)
   
+  // VBAT
+  31,  // D32 is P0.10 (VBAT)  
 };
 
 void initVariant()

@@ -39,8 +39,8 @@ extern "C"
 // #define CFG_DEBUG 1
 // #define TUSB_OPT_DEVICE_ENABLED 1
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (32)
-#define NUM_DIGITAL_PINS     (32)
+#define PINS_COUNT           (33)
+#define NUM_DIGITAL_PINS     (33)
 #define NUM_ANALOG_INPUTS    (8) // A6 is used for battery, A7 is analog reference
 #define NUM_ANALOG_OUTPUTS   (0)
 
@@ -86,6 +86,8 @@ extern "C"
 #define PIN_A3               (3)
 #define PIN_A4               (4)
 #define PIN_A5               (5)
+#define PIN_VBAT             (32)
+#define VBAT_ENABLE          (14)
 //#define PIN_A6               (6)
 //#define PIN_A7               (7)
 
