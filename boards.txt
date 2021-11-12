@@ -23,15 +23,15 @@ menu.debug=Debug
 # ----------------------------------
 SmartNodeGE.name=Seeed Smart Node Generic Edition
 
-# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
-SmartNodeGE.vid.0=0x239A
-SmartNodeGE.pid.0=0x8061
-SmartNodeGE.vid.1=0x239A
-SmartNodeGE.pid.1=0x0061
-SmartNodeGE.vid.2=0x239A
-SmartNodeGE.pid.2=0x0062
-SmartNodeGE.vid.3=0x239A
-SmartNodeGE.pid.3=0x802A
+# VID/PID for bootloader
+SmartNodeGE.vid.0=0x2886
+SmartNodeGE.pid.0=0x8043
+SmartNodeGE.vid.1=0x2886
+SmartNodeGE.pid.1=0x0043
+SmartNodeGE.vid.2=0x2886
+SmartNodeGE.pid.2=0x0043
+SmartNodeGE.vid.3=0x2886
+SmartNodeGE.pid.3=0x8043
 
 # Upload
 SmartNodeGE.bootloader.tool=bootburn
@@ -39,7 +39,7 @@ SmartNodeGE.upload.tool=nrfutil
 SmartNodeGE.upload.protocol=nrfutil
 SmartNodeGE.upload.use_1200bps_touch=true
 SmartNodeGE.upload.wait_for_upload_port=true
-SmartNodeGE.upload.maximum_size=815104
+SmartNodeGE.upload.maximum_size=811008
 SmartNodeGE.upload.maximum_data_size=237568
 
 # Build
@@ -51,15 +51,15 @@ SmartNodeGE.build.variant=Seeed_Smart_Node_Generic_Edition
 SmartNodeGE.build.usb_manufacturer="Seeed"
 SmartNodeGE.build.usb_product="Smart Node Generic Edition"
 SmartNodeGE.build.extra_flags=-DNRF52840_XXAA -DSeeed_Smart_Node_Generic_Edition {build.flags.usb}
-SmartNodeGE.build.ldscript=nrf52840_s140_v6.ld
-SmartNodeGE.build.vid=0x239A
-SmartNodeGE.build.pid=0x8061
+SmartNodeGE.build.ldscript=nrf52840_s140_v7.ld
+SmartNodeGE.build.vid=0x2886
+SmartNodeGE.build.pid=0x8043
 
 # SofDevice Menu
-SmartNodeGE.menu.softdevice.s140v6=S140 6.1.1
+SmartNodeGE.menu.softdevice.s140v6=S140 7.3.0
 SmartNodeGE.menu.softdevice.s140v6.build.sd_name=s140
-SmartNodeGE.menu.softdevice.s140v6.build.sd_version=6.1.1
-SmartNodeGE.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+SmartNodeGE.menu.softdevice.s140v6.build.sd_version=7.3.0
+SmartNodeGE.menu.softdevice.s140v6.build.sd_fwid=0x0123
 
 # Debug Menu
 SmartNodeGE.menu.debug.l0=Level 0 (Release)
@@ -77,15 +77,15 @@ SmartNodeGE.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 # ----------------------------------
 xiaonRF52840.name=Seeed XIAO nRF52840
 
-# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
-xiaonRF52840.vid.0=0x239A
-xiaonRF52840.pid.0=0x8059
-xiaonRF52840.vid.1=0x239A
-xiaonRF52840.pid.1=0x0059
-xiaonRF52840.vid.2=0x239A
-xiaonRF52840.pid.2=0x0060
-xiaonRF52840.vid.3=0x239A
-xiaonRF52840.pid.3=0x802A
+# VID/PID for bootloader
+xiaonRF52840.vid.0=0x2886
+xiaonRF52840.pid.0=0x8044
+xiaonRF52840.vid.1=0x2886
+xiaonRF52840.pid.1=0x0044
+xiaonRF52840.vid.2=0x2886
+xiaonRF52840.pid.2=0x0044
+xiaonRF52840.vid.3=0x2886
+xiaonRF52840.pid.3=0x8044
 
 # Upload
 xiaonRF52840.bootloader.tool=bootburn
@@ -93,7 +93,7 @@ xiaonRF52840.upload.tool=nrfutil
 xiaonRF52840.upload.protocol=nrfutil
 xiaonRF52840.upload.use_1200bps_touch=true
 xiaonRF52840.upload.wait_for_upload_port=true
-xiaonRF52840.upload.maximum_size=815104
+xiaonRF52840.upload.maximum_size=811008
 xiaonRF52840.upload.maximum_data_size=237568
 
 # Build
@@ -105,15 +105,15 @@ xiaonRF52840.build.variant=Seeed_XIAO_nRF52840
 xiaonRF52840.build.usb_manufacturer="Seeed"
 xiaonRF52840.build.usb_product="XIAO nRF52840"
 xiaonRF52840.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
-xiaonRF52840.build.ldscript=nrf52840_s140_v6.ld
-xiaonRF52840.build.vid=0x239A
-xiaonRF52840.build.pid=0x8059
+xiaonRF52840.build.ldscript=nrf52840_s140_v7.ld
+xiaonRF52840.build.vid=0x2886
+xiaonRF52840.build.pid=0x8044
 
 # SofDevice Menu
-xiaonRF52840.menu.softdevice.s140v6=S140 6.1.1
+xiaonRF52840.menu.softdevice.s140v6=S140 7.3.0
 xiaonRF52840.menu.softdevice.s140v6.build.sd_name=s140
-xiaonRF52840.menu.softdevice.s140v6.build.sd_version=6.1.1
-xiaonRF52840.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+xiaonRF52840.menu.softdevice.s140v6.build.sd_version=7.3.0
+xiaonRF52840.menu.softdevice.s140v6.build.sd_fwid=0x0123
 
 # Debug Menu
 xiaonRF52840.menu.debug.l0=Level 0 (Release)
@@ -131,15 +131,15 @@ xiaonRF52840.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 # ----------------------------------
 xiaonRF52840Sense.name=Seeed XIAO nRF52840 Sense
 
-# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
-xiaonRF52840Sense.vid.0=0x239A
-xiaonRF52840Sense.pid.0=0x8057
-xiaonRF52840Sense.vid.1=0x239A
-xiaonRF52840Sense.pid.1=0x0057
-xiaonRF52840Sense.vid.2=0x239A
-xiaonRF52840Sense.pid.2=0x0058
-xiaonRF52840Sense.vid.3=0x239A
-xiaonRF52840Sense.pid.3=0x802A
+# VID/PID for bootloader
+xiaonRF52840Sense.vid.0=0x2886
+xiaonRF52840Sense.pid.0=0x8045
+xiaonRF52840Sense.vid.1=0x2886
+xiaonRF52840Sense.pid.1=0x0045
+xiaonRF52840Sense.vid.2=0x2886
+xiaonRF52840Sense.pid.2=0x0045
+xiaonRF52840Sense.vid.3=0x2886
+xiaonRF52840Sense.pid.3=0x8045
 
 # Upload
 xiaonRF52840Sense.bootloader.tool=bootburn
@@ -147,7 +147,7 @@ xiaonRF52840Sense.upload.tool=nrfutil
 xiaonRF52840Sense.upload.protocol=nrfutil
 xiaonRF52840Sense.upload.use_1200bps_touch=true
 xiaonRF52840Sense.upload.wait_for_upload_port=true
-xiaonRF52840Sense.upload.maximum_size=815104
+xiaonRF52840Sense.upload.maximum_size=811008
 xiaonRF52840Sense.upload.maximum_data_size=237568
 
 # Build
@@ -159,15 +159,15 @@ xiaonRF52840Sense.build.variant=Seeed_XIAO_nRF52840_Sense
 xiaonRF52840Sense.build.usb_manufacturer="Seeed"
 xiaonRF52840Sense.build.usb_product="XIAO nRF52840 Sense"
 xiaonRF52840Sense.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
-xiaonRF52840Sense.build.ldscript=nrf52840_s140_v6.ld
-xiaonRF52840Sense.build.vid=0x239A
-xiaonRF52840Sense.build.pid=0x8057
+xiaonRF52840Sense.build.ldscript=nrf52840_s140_v7.ld
+xiaonRF52840Sense.build.vid=0x2886
+xiaonRF52840Sense.build.pid=0x8045
 
 # SofDevice Menu
-xiaonRF52840Sense.menu.softdevice.s140v6=S140 6.1.1
+xiaonRF52840Sense.menu.softdevice.s140v6=S140 7.3.0
 xiaonRF52840Sense.menu.softdevice.s140v6.build.sd_name=s140
-xiaonRF52840Sense.menu.softdevice.s140v6.build.sd_version=6.1.1
-xiaonRF52840Sense.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+xiaonRF52840Sense.menu.softdevice.s140v6.build.sd_version=7.3.0
+xiaonRF52840Sense.menu.softdevice.s140v6.build.sd_fwid=0x0123
 
 # Debug Menu
 xiaonRF52840Sense.menu.debug.l0=Level 0 (Release)
